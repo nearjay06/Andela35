@@ -6,6 +6,7 @@ import os
 
 class DatabaseConnection:
     def __init__(self):
+    #  if os.getenv('DB_NAME')=='test_db':
         try:
             self.connection = psycopg2.connect(
                 dbname='learn_db', user='postgres', host='localhost', password='kengo1234', port=5432
